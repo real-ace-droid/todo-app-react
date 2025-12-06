@@ -1,23 +1,23 @@
 
-import './App.css';
-import './components/TodoStyles.css'
-import TodoList from './components/TodoList';
-import TodoInput from './components/TodoInput';
-import TodoActions from './components/TodoActions';
-import { TodoProvider } from './context/TodoContext';
+
+
+import TodoList from "@app/components/TodoList";
+import TodoInput from "@app/components/TodoInput";
+import TodoActions from "@app/components/TodoActions";
+import { TodoProvider } from "@app/context/TodoContext";
 
 function App() {
 
   return (
     <TodoProvider>
-      <div className="App">
+      <div className="m-2.5">
         <h1>Todo Application</h1>
         <TodoInput />
         <TodoActions />
         <TodoList />
       </div>
-    </TodoProvider>
-  );
+    </TodoProvider>);
+
 }
 
 export default App;
